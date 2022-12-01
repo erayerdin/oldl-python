@@ -1,1 +1,5 @@
-__version__ = '0.1.0'
+def dumps(input) -> str:
+    """Serializes a data to OLDL.
+    """
+    # TODO tbi
+    raise NotImplementedError()
