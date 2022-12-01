@@ -22,13 +22,9 @@ jobs:
       uses: abatilo/actions-poetry@v2
       with:
         poetry-version: "1.1.13"
-    - name: Install dependencies
-      run: |
-        poetry shell
-        poetry install
     - name: Run Python Tests
       run: |
-        pytest
+        poetry run pytest
     # - name: Run Coverage
     #   if: "(matrix.python-version == 3.7 && matrix.django-version == 2.2)"
     #   env:
